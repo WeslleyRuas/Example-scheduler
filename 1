@@ -1,0 +1,19 @@
+package me.weslleyruas.testandofile;
+
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class main extends JavaPlugin{
+	
+	
+	 public void onEnable() {
+		 Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+	          public void run() {
+	           System.out.println("Mensagem a cada 10 segundos!");
+	          }
+	        }
+	        , 0L, 100L);
+		}
+	    }
+
+
